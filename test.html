@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mystyle.css">
+    <script src="myscript.js"></script>
+    <title>Visut Jaima</title>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="left">
+            <input type="number" id="number" value="" min="0" maxlength="99999999" oninput="this.value=this.value.slice(0,this.maxLength||1/1);this.value=(this.value   < 0) ? (1/1) : this.value;" onkeypress="return runScript(event)">
+        </div>
+
+        <div class="center">
+            <select name="cal" id="cal" onmousedown="this.value='';" onchange="runScript()">
+    <option value="1">isPrime</option>
+    <option value="2 ">isFibonacci</option>
+      </select>
+        </div>
+
+        <div class="right ">
+            <label id="result"></label>
+        </div>
+    </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
